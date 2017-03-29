@@ -10,19 +10,19 @@ This automatic page generator is the easiest way to create beautiful pages for a
               <li> - Data from socket</li>
                <li>- Ingest data: json, csv, socket.</li>
                </ul>
-        </li>
+
         <li>Basic analysis</li>
                 <ul><li>- Missing data</li>
                 <li>- Some basic stats: biggest, smoller document, number of documents, How many documents type
                  Documents structure</li>
                 <li>- Get the point of your data</li>
                 </ul>
-        </li>
+
         <li>Indexing</li>
               <ul><li>- Good index, bad index</li>
                <li>- Protocol to index</li>
                </ul>
-        </li>
+
         <li>Data presentation</li>
             <ul><li>- Show data as human readeable information</li>
              <li>- Cloud9</li>
@@ -30,7 +30,7 @@ This automatic page generator is the easiest way to create beautiful pages for a
             <li> - Python</li>
              </ul>
 
-        </li>
+      
         <li>Demostrations
         </li>
 </ul>
