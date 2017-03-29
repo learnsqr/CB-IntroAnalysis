@@ -1,2 +1,2 @@
 # CB-IntroAnalysis
-Couchbase: A introduction to analysis
+Couchbase: An introduction to analysis

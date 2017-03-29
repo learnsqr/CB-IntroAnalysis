@@ -3,7 +3,7 @@
   <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="chrome=1">
-    <title>Couchbase Administration and Development by agustincl</title>
+    <title>Couchbase: An Introduction to Analysis</title>
 
     <link rel="stylesheet" href="stylesheets/styles.css">
     <link rel="stylesheet" href="stylesheets/fix-styles.css">
@@ -17,71 +17,64 @@
   <body>
     <div class="wrapper">
       <header>
-        <h1>Couchbase Administration and Development</h1>
-        <p>Curso práctico</p>
+        <h2>Couchbase: An Introduction to Analysis</h2>
+        <p>Seminar and code</p>
 
-        <p class="view"><a href="https://github.com/learnsqr/couchbase">View the Project on GitHub <small>learnsqr/couchbase</small></a></p>
+        <p class="view"><a href="https://github.com/learnsqr/CB-IntroAnalysis">View the Project on GitHub <small>learnsqr/CB-IntroAnalysis</small></a></p>
 
 
         <ul>
-          <li><a href="https://github.com/learnsqr/couchbase/zipball/master">Download <strong>ZIP File</strong></a></li>
-          <li><a href="https://github.com/learnsqr/couchbase/tarball/master">Download <strong>TAR Ball</strong></a></li>
-          <li><a href="https://github.com/learnsqr/couchbase">View On <strong>GitHub</strong></a></li>
+          <li><a href="https://github.com/learnsqr/CB-IntroAnalysis/zipball/master">Download <strong>ZIP File</strong></a></li>
+          <li><a href="https://github.com/learnsqr/CB-IntroAnalysis/tarball/master">Download <strong>TAR Ball</strong></a></li>
+          <li><a href="https://github.com/learnsqr/CB-IntroAnalysis">View On <strong>GitHub</strong></a></li>
         </ul>
 
       </header>
       <section>
         <h1>
 			<a name="welcome-to-github-pages" class="anchor" href="#welcome-to-github-pages">
-			<span class="octicon octicon-link"></span></a>Welcome to Couchbase Administration and Development
+			<span class="octicon octicon-link"></span></a>Couchbase: An Introduction to Analysis
 		</h1>
 
-<p>Curso de adminstración y desarrollo usando Couchbase</p>
+    <h4>
+      <a href="presentation/presentation.html#/" class="user-mention" target="_blank">Presentación</a>
+    </h4>
 
 <h2>Temario</h2>
 <p>
 <ul>
+        <li>Get data</li>
+               <ul><li>- Sources</li>
+               <li>- Data from feed</li>
+              <li> - Data from socket</li>
+               <li>- Ingest data: json, csv, socket.</li>
+               </ul>
+        </li>
+        <li>Basic analysis</li>
+                <ul><li>- Missing data</li>
+                <li>- Some basic stats: biggest, smoller document, number of documents, How many documents type
+                 Documents structure</li>
+                <li>- Get the point of your data</li>
+                </ul>
+        </li>
+        <li>Indexing</li>
+              <ul><li>- Good index, bad index</li>
+               <li>- Protocol to index</li>
+               </ul>
+        </li>
+        <li>Data presentation</li>
+            <ul><li>- Show data as human readeable information</li>
+             <li>- Cloud9</li>
+            <li> - D3</li>
+            <li> - Python</li>
+             </ul>
 
-<li>1. Introducción a las características y capacidades de Couchbase Server 4.0 2. Casos de uso principales para Couchbase</li>
-<li>3. Dimensionamiento del Hardware para diferentes cargas de trabajo</li>
-<li>4. Instalación y best practices para la configuración de Couchbase</li>
-<li>5. Cómo realizar actualizaciones de Couchbase en un entorno en producción 6. vBuckets</li>
-<li>7. Storage Engine: Caching layer, Disk persistence y Replicación de Red</li>
-<li>8. Server warmup</li>
-<li>9. Réplicas y replicación intra‐cluster: Cómo gestiona Couchbase la resolución de la consistencia 10. Configuración de una aplicación cliente para utilizar en un cluster de Couchbase</li>
-<li>11. Cómo determina un cliente a qué nodo de couchbase se conecta para I/O</li>
-<li>12. Creación de un nuevo Bucket para añadir datos</li>
-<li>13. Cómo se gestionan los borrados de forma asíncrona: Tombstones y Compaction </li>
-<li>14. Ejection, Eviction y Working Set Management</li>
-<li>15. Rebalanceo de un cluster después de añadir o eliminar nodos</li>
-<li>16. Views y Indexing</li>
-<li>17. Gestión de Rack Awareness</li>
-<li>18.Tareas administrativas: incrementar o reducir el tamaño del cluster, gestionar una situación de failover, etc. 19. Benchmarking y monitorización de un cluster en vivo</li>
-<li>20. Cross Datacenter Replication y estrategias de resolución de conflictos</li>
-<li>21. Backup y Restore de un cluster</li>
-<li>22. Consejos y Trucos para el troubleshooting de un cluster de Couchbase</li>
-<li>23. Uso de la Consola Web para administrar y monitorizar Couchbase</li>
-<li>24. Uso de la línea de Comandos para administrar Couchbase</li>
-<li>25. Introducción a Couchbase Server</li>
-<li>26. Uso de Couchbase Java SDK</li>
-<li>27. Uso de Views</li>
-<li>28. Modelado de Datos</li>
-<li>29. Problemas de desarrollo más comunes</li>
-<li>30. Integración con ElasticSearch</li>
-<li>31. Full Text Search</li>
-<li>32. Más Características Avanzadas.</li>
-
+        </li>
+        <li>Demostrations
+        </li>
 </ul>
 </p>
-<pre>
-Couchbase Adminsitración y Desarrollo - Contenido
-<a href="presentation/presentation.html#/" class="user-mention" target="_blank">Presentación</a>
-<a href="presentation/L01.html#/" class="user-mention" target="_blank">Introduccion a NoSQL</a>
-<a href="presentation/L01.html#/" class="user-mention" target="_blank">Instalación Couchbase</a>
-<a href="presentation/L02.html#/" class="user-mention" target="_blank">Arquitectura y entorno</a>
 
-
-</pre>
 
 <h3>
 <a name="authors-and-contributors" class="anchor" href="#authors-and-contributors"><span class="octicon octicon-link"></span></a>Contribuidores</h3>
