@@ -1,0 +1,50 @@
+/*
+YUI 3.18.1 (build f7e7bcb)
+Copyright 2014 Yahoo! Inc. All rights reserved.
+Licensed under the BSD License.
+http://yuilibrary.com/license/
+*/
+
+/*body {
+		background: #040E27;
+		background: -moz-radial-gradient(center, circle cover, #555a5f 0%, #040E27 100%);
+		background: -webkit-gradient(radial, center center, 0px, center center, 100%, color-stop(0%, #555a5f), color-stop(100%, #040E27));
+		background: -webkit-radial-gradient(center, circle cover, #555a5f 0%, #040E27 100%);
+		background: -o-radial-gradient(center, circle cover, #555a5f 0%, #040E27 100%);
+		background: -ms-radial-gradient(center, circle cover, #555a5f 0%, #040E27 100%);
+		background: radial-gradient(center, circle cover, #555a5f 0%, #040E27 100%);
+		background-color: #040E27;
+}*/
+
+
+.zf-color {
+		color: #68B604;
+}
+
+.mysql-color {
+		color: #e97b00;
+}
+
+.couch-color {
+		color: #EB1C24;
+}
+
+
+.doctrine-bg {
+		background-color: #040E27;
+}
+
+.reveal section img {
+		border: 0;
+		background: none;
+		box-shadow: 0 0 #000;
+}
+
+.reveal pre {
+		width: 100%;
+		font-size: 0.68em;
+}
+
+.reveal pre code {
+		max-height: 600px;
+}

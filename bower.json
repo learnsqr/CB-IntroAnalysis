@@ -1,0 +1,12 @@
+{
+    "name": "ionic",
+    "version": "0.0.1",
+    "ignore": [
+        "**/.*"
+    ],
+    "dependencies": {
+        "reveal.js": ">=1.0",
+	    "handlebars": "~1.0.0",
+	    "jquery": "~1.10"
+    }
+}

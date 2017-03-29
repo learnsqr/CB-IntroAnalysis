@@ -1,0 +1,349 @@
+<!doctype html>
+<html lang="en">
+
+	<head>
+		<meta charset="utf-8">
+
+		<title>Couchbase Administration and Development</title>
+
+		<meta name="description" content="Couchbase Administration and Development">
+		<meta name="author" content="Agustín F. Calderón M.">
+
+		<meta name="apple-mobile-web-app-capable" content="yes" />
+		<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
+
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+
+		<link rel="stylesheet" href="../assets/vendor/reveal.js/css/reveal.min.css">
+		<link rel="stylesheet" href="../assets/vendor/reveal.js/css/theme/moon.css" id="theme">
+
+		<!-- For syntax highlighting -->
+		<link rel="stylesheet" href="../assets/vendor/reveal.js/lib/css/zenburn.css">
+
+		<!-- If the query includes 'print-pdf', include the PDF print sheet -->
+		<script>
+			if( window.location.search.match( /print-pdf/gi ) ) {
+				var link = document.createElement( 'link' );
+				link.rel = 'stylesheet';
+				link.type = 'text/css';
+				link.href = '../assets/vendor/reveal.js/css/print/pdf.css';
+				document.getElementsByTagName( 'head' )[0].appendChild( link );
+			}
+		</script>
+
+		<!--[if lt IE 9]>
+		<script src="lib/js/html5shiv.js"></script>
+		<![endif]-->
+
+
+		<style type="text/css">
+            /* overrides */
+            /*body {
+                background: #040E27;
+                background: -moz-radial-gradient(center, circle cover, #555a5f 0%, #040E27 100%);
+                background: -webkit-gradient(radial, center center, 0px, center center, 100%, color-stop(0%, #555a5f), color-stop(100%, #040E27));
+                background: -webkit-radial-gradient(center, circle cover, #555a5f 0%, #040E27 100%);
+                background: -o-radial-gradient(center, circle cover, #555a5f 0%, #040E27 100%);
+                background: -ms-radial-gradient(center, circle cover, #555a5f 0%, #040E27 100%);
+                background: radial-gradient(center, circle cover, #555a5f 0%, #040E27 100%);
+                background-color: #040E27;
+            }*/
+
+            .zf-color {
+                color: #68B604;
+            }
+
+            .mysql-color {
+                color: #e97b00;
+            }
+
+			.zf2-color {
+                color: #e97b00;
+            }
+
+            .doctrine-bg {
+                background-color: #040E27;
+            }
+
+            .reveal section img {
+                border: 0;
+                background: none;
+                box-shadow: 0 0 #000;
+            }
+
+            .reveal pre {
+                width: 100%;
+                font-size: 0.68em;
+            }
+
+            .reveal pre code {
+                max-height: 600px;
+            }
+
+.reveal table {
+  margin: auto;
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+.reveal table th {
+  font-weight: bold;
+}
+
+.reveal table th,
+.reveal table td {
+  text-align: left;
+  padding: 0.2em 0.5em 0.2em 0.5em;
+  border-bottom: 1px solid;
+}
+
+
+        </style>
+
+
+	</head>
+
+	<body>
+
+		<div class="reveal">
+
+			<!-- Any section element inside of this container is displayed as a slide -->
+			<div class="slides">
+
+
+<!-- ************************************ TITLE ************************************************** -->
+<section>
+<h1>
+<span class="mysql-color">Introducción a <span class="zf-color">Ionic</span></span>
+
+</h1>
+<h1>
+<img
+                            src="../assets/img/ionic-logo-white.svg"
+                            alt="Doctrine Project" border="0"
+                            height="80px"
+                            style="margin-bottom: -70px; "
+                        />
+                        +
+                        <img
+                            src="../assets/img/cordova_logo_normal_dark_small.png"
+                            alt="Zend Framework 2"
+                            border="0"
+                            height="80px"
+                            style="margin-bottom: -70px;"
+                        />
+    </h1>
+</section>
+<!-- ************************************ TEMPLATE ************************************************** -->
+<!--
+<section>
+<section data-markdown >
+<script type="text/template">
+## <span class="mysql-color">Introducción</span>
+Gestor de Bases de Datos
+Base de datos opensource mas popular
+70,000 descargas diarias
+En constante desarrollo desde 1995
+</script>
+</section>
+-->
+<!-- ************************************ BEGIN ************************************************** -->
+
+<!-- ************************************ NEXT ************************************************** -->
+
+<section data-markdown>
+<script type="text/template">
+## <span class="mysql-color"><span class="zf-color">Ionic</span></span>
+- [Ben Spearry](http://bensperry.com/)
+- [Max Lynch](http://maxlynch.com/)
+- November 2013 alpha released by Drifty Co.
+- 1.3M apps until 2015
+- [@Ionicframework](https://twitter.com/ionicframework)
+
+</script>
+</section>
+
+<section data-markdown>
+<script type="text/template">
+## <span class="mysql-color">Que es <span class="zf-color">Ionic</span></span>
+- Framework open source
+- Basado en HTML5, CSS3 y Javascript
+- Aplicaciones híbridas.
+- <span class="zf2-color">NO es una librería responsive</span>
+- Ionic es un SDK para <span class="zf-color">mejorar la UI</span> de una aplicación web en un dispositivo móvil
+</script>
+</section>
+
+<section data-markdown>
+<script type="text/template">
+## <span class="mysql-color">Aplicaciones <span class="zf-color">móviles</span></span>
+
+<img height="538" src="img/accesointernet.png" alt="Down arrow">
+
+
+Note:
+http://ionicframework.com/docs/overview/#browser-support
+</script>
+</section>
+
+
+
+<section>
+<section data-markdown>
+<script type="text/template">
+## <span class="mysql-color"><span class="zf-color">The State</span> of Hybrid Development: Facebook quote</span>
+<blockquote cite="https://techcrunch.com/2012/09/11/mark-zuckerberg-our-biggest-mistake-with-mobile-was-betting-too-much-on-html5/">
+	"When I’m introspective about the last few years I think the biggest mistake that we made, as a company,
+	is betting too much on HTML5 as opposed to native…
+	because it just wasn’t there."
+</blockquote>
+Mark Zuckerberg, September 2012
+
+Note:
+https://techcrunch.com/2012/09/11/mark-zuckerberg-our-biggest-mistake-with-mobile-was-betting-too-much-on-html5/
+</script>
+</section>
+
+<section data-markdown>
+<script type="text/template">
+## <span class="mysql-color"><span class="zf-color">The State</span> of Hybrid Development: LinkedIn quote</span>
+<blockquote cite="http://venturebeat.com/2013/04/17/linkedin-mobile-web-breakup/">
+	"There are a few things that are critically missing. One is tooling support
+	—having a debugger that actually works, performance tools that tell you
+	where the memory is running out."
+</blockquote>
+Kiran Prasad, LinkedIn’s senior director for mobile engineering, April 2013
+
+Note:
+https://techcrunch.com/2012/09/11/mark-zuckerberg-our-biggest-mistake-with-mobile-was-betting-too-much-on-html5/
+</script>
+</section>
+
+<section data-markdown>
+<script type="text/template">
+## <span class="mysql-color"><span class="zf-color">The State</span> of Hybrid Development: Vision Mobile quote</span>
+<blockquote cite="http://venturebeat.com/2013/04/17/linkedin-mobile-web-breakup/">
+	"Our research on HTML5 vs native apps in Q3 2013 showed that the key issue in HTML5 development,
+	is not performance or API reach, but the lack of mature development tools."
+</blockquote>
+State of The Developer Nation, Q1 2014
+
+Note:
+https://www.visionmobile.com/
+</script>
+</section>
+
+<section data-markdown>
+<script type="text/template">
+## <span class="mysql-color">Gartner <span class="zf-color">Hype Cycle</span></span>
+
+<img height="538" src="img/Hype-Cycle-General.png" alt="Down arrow">
+
+
+Note:
+Hype: generally the enthusiastic and strong feeling around new forms of media and technology in
+which people expect everything will be modified for the better
+</script>
+</section>
+
+<section data-markdown>
+<script type="text/template">
+## <span class="mysql-color"><span class="zf-color">Hype Cycle</span> of Hybrid Development</span>
+
+<img height="538" src="img/hype-cycle-hybrid.png" alt="Down arrow">
+
+
+Note:
+http://ionicframework.com/docs/overview/#browser-support
+</script>
+</section>
+
+</section>
+
+<section data-markdown>
+<script type="text/template">
+## <span class="mysql-color"><span class="zf-color">Hybrid</span> applications</span>
+- Modern Web standards for modern mobile devices
+- <strong>HTML5</strong> that acts like native
+- Web wrapped in  <strong>native layer</strong>
+- Direct access to <strong>native APIs</strong>
+- Familiar <strong>web dev</strong> environment
+- A <strong>single code base</strong> (web platform!)
+<br/>
+<span class="zf-color">Ionic 2</span>: Windows 10 Universal App, iOS 8+, Android 4.4+.
+
+
+Note:
+http://ionicframework.com/docs/overview/#browser-support
+</script>
+</section>
+
+<section data-markdown>
+<script type="text/template">
+## <span class="mysql-color">Ventajas de Ionic</span>
+- Desarrollo de <span class="zf-color">aplicaciones híbridas</span>: para "todos" los dispositivos
+- Ionic provee <span class="zf-color">plantillas</span> simples para empezar de forma rápida
+- Aplicaciones limpias, con fácil <span class="zf-color">mantenimiento y escalables</span>
+- <span class="zf-color">Compatibilidad</span> contrastada en dispositivos Androd e iOS
+
+Note:
+http://ionicframework.com/docs/overview/#browser-support
+</script>
+</section>
+
+<section data-markdown>
+<script type="text/template">
+## <span class="mysql-color">Desventajas de Ionic</span>
+- El navegador <span class="zf-color">NO es una interface de desarrollo válida</span>
+- Algunas <span class="zf-color">funcinalidades nativas</span>, no estan o son difíciles de implementar
+- Las app híbridas son <span class="zf-color">más lentas</span> que las app nativas
+
+Note:
+http://ionicframework.com/docs/overview/#browser-support
+</script>
+</section>
+
+<!-- ************************************ END ************************************************** -->
+<!-- ************************************ END ************************************************** -->
+
+
+			</div>
+
+		</div>
+
+		<script src="../assets/vendor/reveal.js/lib/js/head.min.js"></script>
+		<script src="../assets/vendor/reveal.js/js/reveal.min.js"></script>
+
+
+		<script>
+
+			// Full list of configuration options available here:
+			// https://github.com/hakimel/reveal.js#configuration
+			Reveal.initialize({
+				controls: true,
+				progress: true,
+				history: true,
+				center: true,
+
+				theme: Reveal.getQueryHash().theme, // available themes are in /css/theme
+				transition: Reveal.getQueryHash().transition || 'default', // default/cube/page/concave/zoom/linear/fade/none
+
+				// Parallax scrolling
+				// parallaxBackgroundImage: 'https://s3.amazonaws.com/hakim-static/reveal-js/reveal-parallax-1.jpg',
+				// parallaxBackgroundSize: '2100px 900px',
+
+				// Optional libraries used to extend on reveal.js
+				dependencies: [
+					{ src: '../assets/vendor/reveal.js/lib/js/classList.js', condition: function() { return !document.body.classList; } },
+					{ src: '../assets/vendor/reveal.js/plugin/markdown/marked.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
+					{ src: '../assets/vendor/reveal.js/plugin/markdown/markdown.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
+					{ src: '../assets/vendor/reveal.js/plugin/highlight/highlight.js', async: true, callback: function() { hljs.initHighlightingOnLoad(); } },
+					{ src: '../assets/vendor/reveal.js/plugin/zoom-js/zoom.js', async: true, condition: function() { return !!document.body.classList; } },
+					{ src: '../assets/vendor/reveal.js/plugin/notes/notes.js', async: true, condition: function() { return !!document.body.classList; } }
+				]
+			});
+
+		</script>
+
+	</body>
+</html>

@@ -1,0 +1,180 @@
+<!doctype html>
+<html lang="en">
+
+	<head>
+		<meta charset="utf-8">
+
+		<title>Couchbase Administration and Development</title>
+
+		<meta name="description" content="Couchbase Administration and Development">
+		<meta name="author" content="Agustín F. Calderón M.">
+
+		<meta name="apple-mobile-web-app-capable" content="yes" />
+		<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
+
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+
+		<link rel="stylesheet" href="../assets/vendor/reveal.js/css/reveal.min.css">
+		<link rel="stylesheet" href="../assets/vendor/reveal.js/css/theme/moon.css" id="theme">
+
+		<!-- For syntax highlighting -->
+		<link rel="stylesheet" href="../assets/vendor/reveal.js/lib/css/zenburn.css">
+
+		<!-- Presentation Style -->
+		<link rel="stylesheet" href="../stylesheets/presentation.css">
+
+		<!-- If the query includes 'print-pdf', include the PDF print sheet -->
+		<script>
+			if( window.location.search.match( /print-pdf/gi ) ) {
+				var link = document.createElement( 'link' );
+				link.rel = 'stylesheet';
+				link.type = 'text/css';
+				link.href = '../assets/vendor/reveal.js/css/print/pdf.css';
+				document.getElementsByTagName( 'head' )[0].appendChild( link );
+			}
+		</script>
+
+		<!--[if lt IE 9]>
+		<script src="lib/js/html5shiv.js"></script>
+		<![endif]-->
+
+		<style type="text/css">
+  	/* overrides */
+    </style>
+
+
+	</head>
+
+	<body>
+
+		<div class="reveal">
+
+			<!-- Any section element inside of this container is displayed as a slide -->
+			<div class="slides">
+
+				<section>
+                    <h1>
+                        <span class="couch-color">Couchbase</span>
+                        <span>Course</span>
+                        <br/><br/>
+                    </h1>
+
+                    <h1>
+                        <img
+                            src="../assets/img/nosql-logo.png"
+                            alt="Doctrine Project" border="0"
+                            height="120px"
+                            style="margin-bottom: -40px;
+																   margin-right:80px;
+																	 margin-left:80px"
+                        />
+                        +
+                        <img
+                            src="../assets/img/couchbase_logo.png"
+                            alt="Zend Framework 2"
+                            border="0"
+                            height="120px"
+                            style="margin-bottom: -40px; margin-left:80px"
+                        />
+                    </h1>
+                </section>
+                <section>
+                    <h1>
+                        Hello!
+                    </h1>
+                </section>
+                <section>
+                    <h2>
+                        <a href="http://agustincl.github.com/" target="_blank" rel="me">Agustín F. Calderón M.</a>
+                    </h2>
+                </section>
+                <section>
+                    <img
+                        src="../assets/img/gh.svg"
+                        alt="Agustincl on Github"
+                        height="70px"
+                        style="margin: 15px;"
+                        />
+                    <img
+                        src="../assets/img/twitter.svg"
+                        alt="Agustincl on Twitter"
+                        height="65px"
+                        style="margin: 15px;"
+                    />
+                    <h2><a href="http://twitter.com/agustincl" target="_blank">Agustincl</a></h2>
+                </section>
+
+
+<!-- ************************************ INTRODUCCION ************************************************** -->
+
+<section><section data-markdown="slides/cd210.md"></section></section>
+<section><section data-markdown="slides/cs300.md"></section></section>
+</section>
+
+<!-- ************************************ INTRODUCCION ************************************************** -->
+
+
+
+
+
+                <section>
+                    <h2>Questions?</h2>
+                    <p>Send me a tweet <a href="https://twitter.com/agustincl" target="_blank">@Agustincl</a>!</p>
+                </section>
+
+                <section>
+                    <h2>Fork it!</h2>
+                    <p>
+                        You can find these slides on GitHub at
+                        <a href="https://github.com/learnsqr/ionic" target="_blank">
+                            https://github.com/learnsqr/ionic
+                        </a>
+                    </p>
+                </section>
+
+                <section>
+                    <h2>Thanks for listening!</h2>
+                    <a href="https://joind.in/92751" target="_blank">https://joind.in/92751</a>
+                    <br/>
+                    <img src="http://chart.apis.google.com/chart?chs=400x400&cht=qr&chl=https://joind.in/92751" alt="Joind.in talk page QR code"/>
+                </section>
+
+			</div>
+
+		</div>
+
+		<script src="../assets/vendor/reveal.js/lib/js/head.min.js"></script>
+		<script src="../assets/vendor/reveal.js/js/reveal.min.js"></script>
+
+		<script>
+
+			// Full list of configuration options available here:
+			// https://github.com/hakimel/reveal.js#configuration
+			Reveal.initialize({
+				controls: true,
+				progress: true,
+				history: true,
+				center: true,
+
+				theme: Reveal.getQueryHash().theme, // available themes are in /css/theme
+				transition: Reveal.getQueryHash().transition || 'default', // default/cube/page/concave/zoom/linear/fade/none
+
+				// Parallax scrolling
+				// parallaxBackgroundImage: 'https://s3.amazonaws.com/hakim-static/reveal-js/reveal-parallax-1.jpg',
+				// parallaxBackgroundSize: '2100px 900px',
+
+				// Optional libraries used to extend on reveal.js
+				dependencies: [
+					{ src: '../assets/vendor/reveal.js/lib/js/classList.js', condition: function() { return !document.body.classList; } },
+					{ src: '../assets/vendor/reveal.js/plugin/markdown/marked.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
+					{ src: '../assets/vendor/reveal.js/plugin/markdown/markdown.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
+					{ src: '../assets/vendor/reveal.js/plugin/highlight/highlight.js', async: true, callback: function() { hljs.initHighlightingOnLoad(); } },
+					{ src: '../assets/vendor/reveal.js/plugin/zoom-js/zoom.js', async: true, condition: function() { return !!document.body.classList; } },
+					{ src: '../assets/vendor/reveal.js/plugin/notes/notes.js', async: true, condition: function() { return !!document.body.classList; } }
+				]
+			});
+
+		</script>
+
+	</body>
+</html>

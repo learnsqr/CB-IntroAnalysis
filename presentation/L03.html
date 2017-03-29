@@ -1,0 +1,626 @@
+<!doctype html>
+<html lang="en">
+
+	<head>
+		<meta charset="utf-8">
+
+		<title>Ionic SDK</title>
+
+		<meta name="description" content="Ionic SDK - Practical course for mastering Ionic">
+		<meta name="author" content="Agustín F. Calderón M.">
+
+		<meta name="apple-mobile-web-app-capable" content="yes" />
+		<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
+
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+
+		<link rel="stylesheet" href="../assets/vendor/reveal.js/css/reveal.min.css">
+		<link rel="stylesheet" href="../assets/vendor/reveal.js/css/theme/moon.css" id="theme">
+
+		<!-- For syntax highlighting -->
+		<link rel="stylesheet" href="../assets/vendor/reveal.js/lib/css/zenburn.css">
+
+		<!-- If the query includes 'print-pdf', include the PDF print sheet -->
+		<script>
+			if( window.location.search.match( /print-pdf/gi ) ) {
+				var link = document.createElement( 'link' );
+				link.rel = 'stylesheet';
+				link.type = 'text/css';
+				link.href = '../assets/vendor/reveal.js/css/print/pdf.css';
+				document.getElementsByTagName( 'head' )[0].appendChild( link );
+			}
+		</script>
+
+		<!--[if lt IE 9]>
+		<script src="lib/js/html5shiv.js"></script>
+		<![endif]-->
+		
+		<style type="text/css">
+            /* overrides */
+            /*body {
+                background: #040E27;
+                background: -moz-radial-gradient(center, circle cover, #555a5f 0%, #040E27 100%);
+                background: -webkit-gradient(radial, center center, 0px, center center, 100%, color-stop(0%, #555a5f), color-stop(100%, #040E27));
+                background: -webkit-radial-gradient(center, circle cover, #555a5f 0%, #040E27 100%);
+                background: -o-radial-gradient(center, circle cover, #555a5f 0%, #040E27 100%);
+                background: -ms-radial-gradient(center, circle cover, #555a5f 0%, #040E27 100%);
+                background: radial-gradient(center, circle cover, #555a5f 0%, #040E27 100%);
+                background-color: #040E27;
+            }*/
+
+            .zf-color {
+                color: #68B604;
+            }
+
+            .mysql-color {
+                color: #e97b00;
+            }
+
+            .doctrine-bg {
+                background-color: #040E27;
+            }
+
+            .reveal section img {
+                border: 0;
+                background: none;
+                box-shadow: 0 0 #000;
+            }
+
+            .reveal pre {
+                width: 100%;
+                font-size: 0.68em;
+            }
+
+            .reveal pre code {
+                max-height: 600px;
+            }
+            
+.reveal table {
+  margin: auto;
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+.reveal table th {
+  font-weight: bold;
+}
+
+.reveal table th,
+.reveal table td {
+  text-align: left;
+  padding: 0.2em 0.5em 0.2em 0.5em;
+  border-bottom: 1px solid;
+}
+
+
+        </style>
+        
+        
+	</head>
+
+	<body>
+
+		<div class="reveal">
+
+			<!-- Any section element inside of this container is displayed as a slide -->
+			<div class="slides">
+
+<!-- ************************************ TITLE ************************************************** -->
+<section>
+<h1>
+<span class="mysql-color">Componentes</span>
+
+</h1>
+<img
+                            src="../assets/img/ionic-logo-white.svg"
+                            alt="Doctrine Project" border="0"
+                            height="80px"
+                            style="margin-bottom: -70px; "
+                        />
+</section>
+<!-- ************************************ TEMPLATE ************************************************** -->		
+<!--
+<section>         
+<section data-markdown >
+<script type="text/template">
+## <span class="mysql-color">Introducción</span>
+Gestor de Bases de Datos  
+Base de datos opensource mas popular  
+70,000 descargas diarias  
+En constante desarrollo desde 1995  
+</script>
+</section>
+-->
+<!-- ************************************ BEGIN ************************************************** -->	
+
+<!-- ************************************ ADMINISTRACION ************************************************** -->
+<section data-markdown >
+<script type="text/template">
+<h2><span class="mysql-color">Componentes</span></h2>
+  
+- Ionic apps are made of blocks called components. 
+- Allow you to quickly construct an interface.
+- Are primarily HTML and CSS. 
+- Some components also include JavaScript functionality. 
+
+
+</script>
+</section>
+
+<section data-markdown >
+<script type="text/template">
+<h2><span class="mysql-color">Componentes</span></h2>
+<img
+                            src="../assets/img/some-components.jpg"
+                            alt="Doctrine Project" border="0"
+                            height="580px"
+                            style="margin-bottom: -70px; "
+                        />
+
+
+</script>
+</section>
+
+<section>
+<section data-markdown >
+<script type="text/template">
+<h2><span class="mysql-color">Componentes Ionic 1</span></h2>
+  
+- Header
+- Subheader
+- Content
+- Footer
+- Buttons
+	- Block
+	- Full Width
+	- Different Sizes
+	- Outlined
+	- Clear
+	- Icons
+	- Headers/Footers
+	- Clear Buttons in Headers
+	- Button Bar
+
+
+</script>
+</section>
+
+<section data-markdown >
+<script type="text/template">
+<h2><span class="mysql-color">Componentes Ionic 1</span></h2>
+  
+- List
+	- Divider
+	- Icons
+	- Buttons
+	- Avatars
+	- Thumbnails
+	- Inset Lists
+- Card
+	- Headers & Footers
+	- Lists
+	- Images
+	- Showcase
+
+</script>
+</section>
+
+<section data-markdown >
+<script type="text/template">
+<h2><span class="mysql-color">Componentes Ionic 1</span></h2>
+  
+- Form
+	- Placeholder Labels
+	- Inline Labels
+	- Stacked Labels
+	- Floating Labels
+	- Inset Forms	
+	- Inset Inputs
+	- Input Icons
+	- Header Inputs
+- Toggle
+
+</script>
+</section>
+
+<section data-markdown >
+<script type="text/template">
+<h2><span class="mysql-color">Componentes Ionic 1</span></h2>
+  
+- Checkbox
+- Radio button list
+- Range
+- Select
+
+</script>
+</section>
+
+<section data-markdown >
+<script type="text/template">
+<h2><span class="mysql-color">Componentes Ionic 1</span></h2>
+  
+- Tabs
+	- Icon-only
+	- Top Icon
+	 -Left Icon
+	- Striped Style
+
+</script>
+</section>
+
+<section data-markdown >
+<script type="text/template">
+<h2><span class="mysql-color">Componentes Ionic 1</span></h2>
+  
+- Grid
+	- Even Columns
+	- Explicit Column Sized
+	- Offset Columns
+	- Vertically Aligned
+	- Responsive Grid
+
+</script>
+</section>
+
+<section data-markdown >
+<script type="text/template">
+<h2><span class="mysql-color">Componentes Ionic 1</span></h2>
+  
+- Utility
+	- Colors: light, stable, positive, calm, balanced, energized, assertive, royal, dark
+	- Icons
+	- Padding: vertial, horizontal, top, right, bottom, left
+	
+	
+
+</script>
+</section>
+
+ </section>
+
+<section>
+<section data-markdown >
+<script type="text/template">
+<h2><span class="mysql-color">Componentes Ionic 2</span></h2>
+  
+- Action sheet
+- Alert
+	- Basic Alerts
+	- Prompt Alerts
+	- Confirmation Alerts
+	- Radio Alerts
+	- Checkbox Alerts
+- Badges
+
+</script>
+</section>
+
+<section data-markdown >
+<script type="text/template">
+<h2><span class="mysql-color">Componentes Ionic 2</span></h2>
+  
+- Buttons
+	- Default Style
+	- Outline Style
+	- Clear Style
+	- Round Buttons
+	- Block Buttons
+	- Full Buttons
+	- Button Sizes
+	- Icon Buttons
+	- Floating Action Buttons
+	- Buttons In Components	
+
+</script>
+</section>
+
+<section data-markdown >
+<script type="text/template">
+<h2><span class="mysql-color">Componentes Ionic 2</span></h2>
+  
+- Cards
+	- Basic Cards
+	- Card Headers
+	- Card Lists
+	- Card Images
+	- Background Images
+	- Advanced Cards: social, maps, 	
+
+</script>
+</section>
+
+<section data-markdown >
+<script type="text/template">
+<h2><span class="mysql-color">Componentes Ionic 2</span></h2>
+  
+- Checkbox
+- Datetime
+- Gestures: tap, press, pan, swipe, rotate, pinch
+- Grid 
+- Icons
+	- Active/ianctive
+	- Platform specific icons
+	- Variable icons
+	
+
+</script>
+</section>
+
+<section data-markdown >
+<script type="text/template">
+<h2><span class="mysql-color">Componentes Ionic 2</span></h2>
+  
+- Inputs and controls
+	- Fixed Inline Labels
+	- Floating Labels
+	- Inline Labels
+	- Inset Labels
+	- Placeholder Labels
+	- Stacked Labels
+	
+
+</script>
+</section>
+
+<section data-markdown >
+<script type="text/template">
+<h2><span class="mysql-color">Componentes Ionic 2</span></h2>
+  
+- List and controls
+	- Basic Lists
+	- Inset List
+	- List Dividers
+	- List Headers
+	- Icon List
+	- Avatar List
+	- Multi-line List
+	- Sliding List
+	- Thumbnail List
+	
+
+</script>
+</section>
+
+<section data-markdown >
+<script type="text/template">
+<h2><span class="mysql-color">Componentes Ionic 2</span></h2>
+  
+- Loading
+- Menu
+- Modals
+- Navigation
+- Popover
+- Radio
+- Range
+- Searchbar
+- Segment
+- Select
+	
+
+</script>
+</section>
+
+<section data-markdown >
+<script type="text/template">
+<h2><span class="mysql-color">Componentes Ionic 2</span></h2>
+  
+- Slides
+- Tabs
+	- Text Tabs
+	- Icon Tabs
+	- Text and Icon Tabs
+	- Badge Tabs
+- Toast
+- Toggle
+
+</script>
+</section>
+
+<section data-markdown >
+<script type="text/template">
+<h2><span class="mysql-color">Componentes Ionic 2</span></h2>
+  
+- Toolbar	
+	- Basic Usage: header, sub-header, footer, sub-footer
+	- Changing the Color
+	- Buttons in Toolbars
+	- Segment in Toolbars
+	- Searchbar in Toolbars
+
+</script>
+</section>
+
+
+</section>
+
+<section>
+<section data-markdown >
+<script type="text/template">
+<h2><span class="mysql-color">Javascript Ionic 1</span></h2>
+  
+- Action Sheet
+- Backdrop
+- Content
+- Form Inputs
+- Gestures and Events
+- Headers/Footers
+- Keyboard
+- Lists
+- Loading
+- Modal
+
+
+</script>
+</section>
+
+<section data-markdown >
+<script type="text/template">
+<h2><span class="mysql-color">Javascript Ionic 1</span></h2>
+  
+- Navigation
+- Platform
+- Popover
+- Popup
+- Scroll
+- Side Menus
+- Slide Box
+- Spinner
+- Tabs
+- Tap & Click
+- Utility
+
+
+</script>
+</section>
+
+</section>
+
+<section>
+<section data-markdown >
+<script type="text/template">
+<h2><span class="mysql-color">API Ionic 2</span></h2>
+  
+- Action Sheet Controller
+- Alert Controller
+- App
+- Badge
+- Button
+- Checkbox
+- Config
+- Content
+- Datetime
+- Events
+- Footer
+- Header
+- HideWhen
+
+</script>
+</section>
+
+<section data-markdown >
+<script type="text/template">
+<h2><span class="mysql-color">API Ionic 2</span></h2>
+  
+- Icon
+- InfiniteScroll
+- ionicBootstrap
+- Item
+- Item options
+- Item reorder
+- Item sliding
+- Keyboard
+- Label
+- List
+- Loading controller
+- Local storage
+
+</script>
+</section>
+
+<section data-markdown >
+<script type="text/template">
+<h2><span class="mysql-color">API Ionic 2</span></h2>
+  
+- Menu
+- Menu close
+- Menu controller
+- Menu toggle
+- Modal controller
+- Nav
+- Navbar
+- Nav controller
+- Nav params
+- Nap pop
+- Nav push
+
+
+
+</script>
+</section>
+
+<section data-markdown >
+<script type="text/template">
+<h2><span class="mysql-color">API Ionic 2</span></h2>
+  
+- Options
+- Platform
+- Popover controller
+- Radio button
+- Range
+- Refresher
+- Scroll
+- Searchbar
+- Segment
+- Segment button
+- Select
+- ShowWhen
+
+</script>
+</section>
+
+<section data-markdown >
+<script type="text/template">
+<h2><span class="mysql-color">API Ionic 2</span></h2>
+  
+- Slide
+- Slides
+- Spinner
+- Sql storage
+- Tab
+- Tabs
+- Textarea
+- Toast controller
+- Toggle
+- Toolbar
+- View controller
+- Virtual scroll
+
+
+
+</script>
+</section>
+
+</section>
+<!-- ************************************ END ************************************************** -->
+<!-- ************************************ END ************************************************** -->
+
+
+			</div>
+
+		</div>
+
+		<script src="../assets/vendor/reveal.js/lib/js/head.min.js"></script>
+		<script src="../assets/vendor/reveal.js/js/reveal.min.js"></script>
+
+		<script>
+
+			// Full list of configuration options available here:
+			// https://github.com/hakimel/reveal.js#configuration
+			Reveal.initialize({
+				controls: true,
+				progress: true,
+				history: true,
+				center: true,
+
+				theme: Reveal.getQueryHash().theme, // available themes are in /css/theme
+				transition: Reveal.getQueryHash().transition || 'default', // default/cube/page/concave/zoom/linear/fade/none
+
+				// Parallax scrolling
+				// parallaxBackgroundImage: 'https://s3.amazonaws.com/hakim-static/reveal-js/reveal-parallax-1.jpg',
+				// parallaxBackgroundSize: '2100px 900px',
+
+				// Optional libraries used to extend on reveal.js
+				dependencies: [
+					{ src: '../assets/vendor/reveal.js/lib/js/classList.js', condition: function() { return !document.body.classList; } },
+					{ src: '../assets/vendor/reveal.js/plugin/markdown/marked.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
+					{ src: '../assets/vendor/reveal.js/plugin/markdown/markdown.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
+					{ src: '../assets/vendor/reveal.js/plugin/highlight/highlight.js', async: true, callback: function() { hljs.initHighlightingOnLoad(); } },
+					{ src: '../assets/vendor/reveal.js/plugin/zoom-js/zoom.js', async: true, condition: function() { return !!document.body.classList; } },
+					{ src: '../assets/vendor/reveal.js/plugin/notes/notes.js', async: true, condition: function() { return !!document.body.classList; } }
+				]
+			});
+
+		</script>
+
+	</body>
+</html>

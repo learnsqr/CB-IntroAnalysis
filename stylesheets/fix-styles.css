@@ -1,0 +1,16 @@
+header ul.fix {
+  	list-style:none;
+  	background:none;
+	border-radius:none;
+  	border:none;
+  	box-shadow:none;
+  	width:270px;
+	
+}
+
+ul.fix li {
+	width:auto;
+	float:none;
+	border-right:none;
+	height:auto;
+}
