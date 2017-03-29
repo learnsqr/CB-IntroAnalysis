@@ -1,6 +1,6 @@
 markdown: kramdown
-title: Mysqlfordba
-description: MySQL for DB Administrators
-google_analytics: 
+title: Couchbase: An Introduction to Analysis
+description: Seminar
+google_analytics:
 show_downloads: true
 theme: jekyll-theme-minimal
