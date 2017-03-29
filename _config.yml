@@ -1,1 +1,6 @@
 markdown: kramdown
+title: Mysqlfordba
+description: MySQL for DB Administrators
+google_analytics: 
+show_downloads: true
+theme: jekyll-theme-minimal
