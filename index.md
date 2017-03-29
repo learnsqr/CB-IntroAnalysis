@@ -4,26 +4,26 @@ This automatic page generator is the easiest way to create beautiful pages for a
 <h2>Temario</h2>
 <p>
 <ul>
-        <li>Get data</li><li>
+        <li>Get data</li>
                <ul><li>- Sources</li>
                <li>- Data from feed</li>
               <li> - Data from socket</li>
                <li>- Ingest data: json, csv, socket.</li>
                </ul>
         </li>
-        <li>Basic analysis</li><li>
+        <li>Basic analysis</li>
                 <ul><li>- Missing data</li>
                 <li>- Some basic stats: biggest, smoller document, number of documents, How many documents type
                  Documents structure</li>
                 <li>- Get the point of your data</li>
                 </ul>
         </li>
-        <li>Indexing</li><li>
+        <li>Indexing</li>
               <ul><li>- Good index, bad index</li>
                <li>- Protocol to index</li>
                </ul>
         </li>
-        <li>Data presentation</li><li>
+        <li>Data presentation</li>
             <ul><li>- Show data as human readeable information</li>
              <li>- Cloud9</li>
             <li> - D3</li>
@@ -31,8 +31,7 @@ This automatic page generator is the easiest way to create beautiful pages for a
              </ul>
 
       </li>
-        <li>Demostrations
-        </li>
+        <li>Demostrations</li>
 </ul>
 </p>
 
