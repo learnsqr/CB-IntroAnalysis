@@ -1,9 +1,15 @@
 ### Couchbase: An introduction to analysis.
 When data becomes a decision-making tool, we are moving from viewing them as a set of historical data to a set of operational data. It is when technology close to "Real Time" has to be our ally. Couchbase is an operational Big Data solution, among other functionalities, and together with an ecosystem of small developments and tools of the market, allow us to turn our data into the tool of making decisions for today, for the day to day. In short, a paradigm shift between analytical data and operational data. This seminar is a tour to see the data as a tool of the operational world thanks to Couchbase through Use Cases.
 
+<h3><a href="presentation/presentation.html">Presentation</a>
 <h2>Content</h2>
 <p>
 <ul>
+        <li>What is Couchbase</li>
+               <ul><li>- what is Bigdata</li>
+               <li>- What is couchbase</li>
+               </ul>
+
         <li>Get data</li>
                <ul><li>- Sources</li>
                <li>- Data from feed</li>
