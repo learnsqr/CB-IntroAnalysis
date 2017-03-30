@@ -5,12 +5,12 @@ When data becomes a decision-making tool, we are moving from viewing them as a s
 <h2>Content</h2>
 <p>
 <ul>
-        <li>What is Couchbase</li>
+        <li>Couchbase Introduction</li>
                <ul><li>- what is Bigdata</li>
                <li>- What is couchbase</li>
                </ul>
 
-        <li>Get data</li>
+        <li><a href="presentation/getdata.html">Get Data</a></li>
                <ul><li>- Sources</li>
                <li>- Data from feed</li>
               <li> - Data from socket</li>
